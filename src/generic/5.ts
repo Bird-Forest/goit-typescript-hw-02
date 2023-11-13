@@ -4,8 +4,11 @@
 */
 
 interface KeyValuePair {
-  key;
-  value;
+  [key: string]: any;
 }
 
-export {};
+export { };
+
+// nterface KeyValuePair {
+//   [key: string]: string | number | boolean;
+// }

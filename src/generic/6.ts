@@ -14,7 +14,9 @@ type User = {
   password: string;
 }
 
-function createOrUpdateUser(initialValues: User) {
+type UserWithoutName =  Pick<User, 'email' | 'password' >;
+
+function createOrUpdateUser(initialValues: UserWithoutName) {
   // Оновлення користувача
 }
 
